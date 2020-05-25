@@ -1,44 +1,43 @@
 /* Слайдер */
 
 .slick-list {
-	overflow: hidden;
+  overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track{
-	display: flex;
+.slick-track {
+  display: flex;
 }
-
 
 /*=================Slider for the testimonials==================*/
 
 .section-testimonials__slider .slick-list {
-	overflow: hidden;
-	width: 50%;
+  overflow: hidden;
+  width: 50%;
+  border-radius: 10px;
 }
 
 .section-testimonials__slider .slick-arrow.slick-next {
-		width: 60px;
-    height: 60px;
-    background: url("../images/ico/nextarrow.svg") 0 0 / 100% no-repeat;
-    font-size: 0;
-    outline-style: none;
-    border: none;
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background: url("../images/ico/nextarrow.svg") 0 0 / 100% no-repeat;
+  font-size: 0;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
 }
 
 .section-testimonials__slider .slick-arrow.slick-prev {
-		width: 60px;
-    height: 60px;
-    background: url("../images/ico/previewarrow.svg") 0 0 / 100% no-repeat;
-    font-size: 0;
-    outline-style: none;
-    border: none;
-    cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background: url("../images/ico/previewarrow.svg") 0 0 / 100% no-repeat;
+  font-size: 0;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1000px) {
-	
-	.section-testimonials__slider .slick-list {
-		width: 75%;
-	}
+  .section-testimonials__slider .slick-list {
+    width: 75%;
+  }
 }

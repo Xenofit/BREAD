@@ -1,469 +1,912 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>LoveBread</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/mainstyles.css">
-	<link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-</head>
-<body>
-	<header class="header header_bottom-marg">
-		<div class="header__bg">
-			<nav class="nav-panel">
-				<div class="nav-panel__wrapper">	
-					<ul class="nav-panel__list">
-						<li class="nav-panel__item">
-							<a href="#about-me" class="nav-panel__link">
-								<i class="fa fa-info-circle fa-lg"></i> 
-								О себе
-							</a>
-						</li>
-						<li class="nav-panel__item">
-							<a href="#my-bread" class="nav-panel__link">
-							<i class="fa fa-rub fa-lg"></i> 
-								Прайс
-							</a>
-						</li>
-						<li class="nav-panel__item">
-							<a href="#order-bread" class="nav-panel__link">
-							<i class="fa fa-shopping-cart fa-lg"></i> 
-								Купить
-							</a>
-						</li>
-						<li class="nav-panel__item">
-							<a href="#questions" class="nav-panel__link">
-							<i class="fa fa-question-circle fa-lg"></i> 
-								FAQ
-							</a>
-						</li>
-						<li class="nav-panel__item">
-							<a href="#testimonials" class="nav-panel__link">
-							<i class="fa fa-comments fa-lg"></i> 
-								Отзывы
-							</a>
-						</li>
-						<li class="nav-panel__item">
-							<a href="#contacts" class="nav-panel__link">
-							<i class="fa fa-envelope fa-lg"></i> 
-								Контакты
-							</a>
-						</li>
-					</ul>
-				<div class="nav-panel__burger">
-					<span class="nav-panel__line"></span>
-				</div>
-				</div>
-			</nav>
-			<div class="header__wrapper-logo">
-				<img class="header__logo" src="images/logo/logo.png" alt="lovehleb">
-				<h1 class="header__h1">Домашний хлеб на закваске</h1>
-				<a class="header__link" href="#order-bread"><span>сделать заказ</span></a>
-			</div>
-		</div>
-	</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LoveBread</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/mainstyles.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/slider_of_the_testimonials.css" />
+  </head>
 
-	<section class="section-about-me section-about-me_bottom-marg" id="about-me">
-		<div class="container-90">
-			<div class="section-about-me__flexblock">
-				<div class="section-about-me__img">
-					<img class="section-about-me__avatar" src="images/i_am.jpeg" alt="">
-				</div>
-				<div class="section-about-me__info">
-					<div class="section-about-me__wrapperlogo">
-						<img class="section-about-me__logo" src="images/logo/logo2.png" alt="lovehleb-logo">
-					</div>
-					<p class="section-about-me__text">
-						Всем привет. Меня зовут Любовь Голубовская и я люблю хлеб! А ещё я люблю кормить людей хлебом, поэтому пеку его на заказ.
-          </p>
-					<p class="section-about-me__text">
-						На данный момент это 9 видов хлеба, горбушки, кексы и имбирные пряники. Я постоянно расширяю ассортимент и добавляю что-то новое.
-          </p>
-					<p class="section-about-me__text">
-						Все хлебушки только на закваске, из полностью натуральных ингредиентов, а также без использования магазинных дрожжей.
-          </p>
-				</div>
-			</div>
-		</div>
-	</section>
+  <body>
+    <header class="header header_bottom-marg">
+      <div class="header__bg">
+        <nav class="nav-panel">
+          <div class="nav-panel__wrapper">
+            <ul class="nav-panel__list">
+              <li class="nav-panel__item">
+                <a href="#about-me" class="nav-panel__link">
+                  <i class="fa fa-info-circle fa-lg"></i>
+                  О себе
+                </a>
+              </li>
+              <li class="nav-panel__item">
+                <a href="#my-bread" class="nav-panel__link">
+                  <i class="fa fa-rub fa-lg"></i>
+                  Прайс
+                </a>
+              </li>
+              <li class="nav-panel__item">
+                <a href="#order-bread" class="nav-panel__link">
+                  <i class="fa fa-shopping-cart fa-lg"></i>
+                  Купить
+                </a>
+              </li>
+              <li class="nav-panel__item">
+                <a href="#questions" class="nav-panel__link">
+                  <i class="fa fa-question-circle fa-lg"></i>
+                  FAQ
+                </a>
+              </li>
+              <li class="nav-panel__item">
+                <a href="#testimonials" class="nav-panel__link">
+                  <i class="fa fa-comments fa-lg"></i>
+                  Отзывы
+                </a>
+              </li>
+              <li class="nav-panel__item">
+                <a href="#contacts" class="nav-panel__link">
+                  <i class="fa fa-envelope fa-lg"></i>
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="nav-panel__burger">
+              <span class="nav-panel__line"></span>
+            </div>
+          </div>
+        </nav>
+        <div class="header__wrapper-logo">
+          <img class="header__logo" src="images/logo/logo.png" alt="lovehleb" />
+          <h1 class="header__h1">Домашний хлеб на закваске</h1>
+          <a class="header__link" href="#order-bread"
+            ><span>сделать заказ</span></a
+          >
+        </div>
+      </div>
+    </header>
 
-	<section class="section-my-bread section-my-bread_bottom-marg" id="my-bread">
-		<div class="section-my-bread__bg">
-			<h2 class="section-my-bread__header">Прайс</h2>
-		</div>
-		<div class="flexblock-3columns">
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/hamsterbread.jpeg" alt="Хомяк">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Хомяк <span class="flexblock-3columns__price">230&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Хомяк</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Хлеб ржано-пшеничный, темный десертный,заварной. С большим количеством различных семян и сухофруктов. Очень ароматный и сладкий.</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная обдирная, мука пшеничная цельнозерновая, соль, сахар, тмин, кориандр, солод ржаной ферментированный, семечки подсолнечника, семечки тыквенные, семена кунжута светлого и черного, семена льна, крупа пшеничная, курага, изюм, чернослив, вода</p>
-					<span class="flexblock-3columns__price">Буханка примерно 450 гр &ndash; 230&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/gingerbread.jpeg" alt="Пряники имбирные">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Пряники имбирные <span class="flexblock-3columns__price">250&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Имбирные пряники</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Полностью натуральный состав, цельнозерновая полбяная и ржаная мука, а вместо сахара - финиковый сироп, за счёт чего в прянике нет приторной сладости. Благодаря смеси муки текстура просто нежнейшая. А настоящая цейлонская корица в сочетании с ещё 5ью специями и терпким мёдом придают пряный неповторимый аромат.</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука полбяная цельнозерновая, мука ржаная цельнозерновая, мёд, масло сливочное, финиковый сироп, соль, сода, смесь специй&#40;корица цейлонская, имбирь, мускатный орех, гвоздика, бадьян, кардамон&#41;.</p>
-					<span class="flexblock-3columns__price">Минимальный заказ 250 гр &#40;примерно 16-18 шт&#41; &ndash; 250&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/buckwheatbread.jpeg" alt="Гречневый">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Гречневый <span class="flexblock-3columns__price">150&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Гречневый</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Это пшеничный хлеб. Очень ароматный, нежный и вкусный.В отличии от ржаного он имеет более воздушный мякишь с крупными порами. Он совсем без сахара. Для вкуса здесь только солод и соль.</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука пшеничная 1го сорта, мука пшеничная цельнозерновая, мука ржаная обойная, мука гречневая, семена льна.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 450 гр &ndash; 150&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/butterbread.jpeg" alt="Горбушки">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Горбушки <span class="flexblock-3columns__price">200&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Ржаные горбушки</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Вкусные, полезные, ржаные горбушки на экологически чистой муке грубого помола.</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная цельнозерновая грубого помола(Шугуровская), вода, солод ржаной ферментированный, соль.</p>
-					<span class="flexblock-3columns__price">1 порция 450 гр &ndash; 200&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/ryemaltbread.jpeg" alt="Ржаной с солодом">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Ржаной с солодом <span class="flexblock-3columns__price">150&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Ржаной хлеб с солодом</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Хлеб для любителей полезного. 100% ржаной на муке грубого помола. Ароматный за счёт солода.</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная цельнозерновая грубого помола (Шугуровская), вода, солод ржаной ферментированный, соль.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 450 гр &ndash; 150&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/cranberrybread.jpeg" alt="Клюквенный">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Клюквенный <span class="flexblock-3columns__price">230&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Клюквенный</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Очень необычный хлеб. Чисто ржаной с солодом, клюквой и кардамоном.Аромат этой специи очень не обычный для хлеба, но этим он и пленяет от первого до последнего кусочка. Это настоящее хлебное пирожное.</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная обдирная, солод ржаной ферментированный, клюква, мёд, кардамон, соль, вода.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 450 гр &ndash; 230&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/smallhamster.jpeg" alt="Хомячки">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Хомячки <span class="flexblock-3columns__price">300&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Мини хомячки</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Тот же самый легендарный десертный хлеб Хомяк, только в миниатюре. Мини хлебушки - это находка для пикников, праздников а так же для любителей горбушек. Разрезал пополам, намазал маслом и кайфуй!</p> 
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная обдирная, мука пшеничная цельнозерновая, соль, сахар, тмин, кориандр, солод ржаной ферментированный, семечки подсолнечника, семечки тыквенные, семена кунжута светлого и черного, семена льна, крупа пшеничная, курага, изюм, чернослив, вода.</p>
-					<span class="flexblock-3columns__price">1 порция 6шт, примерно 450 гр &ndash; 300&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/ryebread.JPEG" alt="Пшенично-ржаной">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Пшенично-Ржаной <span class="flexblock-3columns__price">120&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Пшенично-ржаной</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Здесь 50% пшеничной цельнозерновой муки и 50% ржаной. Он более нежный, но при этом тоже имеет ярко выраженный ржаной вкус.</p>
-					<p class="flexblock-3columns__compasition">Состав: мука пшеничная цельнозерновая, мука ржаная обдирная, соль, вода.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 500 гр &ndash; 120&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/bananabread.jpeg" alt="bananabread">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Bananabread <span class="flexblock-3columns__price">360&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Bananabread</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Bananabread - банановый кекс в нескольких вариантах: <br>1&#41; Ореховое наслаждение с грецким орехом и миндалём; <br>2&#41; Шоколадное искушение; <br>3&#41; Шоколадно-ореховое объедение; <br>&#42; также возможны вариации с сухофруктами; <br>Нежные, воздушные, постные цельнозерновые кексы на закваске. В их составе нет яиц и молочки. Сверху они посыпаны сладким кокосовым штрейзелем - это хрустящая корочка, которая очень хорошо дополняет эти кексики. Правда в её составе есть сливочное масло. Уж очень с ним она получается вкусная. Но при необходимости можно его заменить растительной альтернативой.</p>
-					<p class="flexblock-3columns__compasition">Состав: бананы, растительное масло, вода, мука пшеничная цельнозерновая, сахар, изюм, остальные ингридиенты зависят от варианта исполнения.</p>
-					<span class="flexblock-3columns__price">Минимальный заказ 6шт &ndash; 360&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/darnbread.jpeg" alt="Дарницкий">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Дарницкий <span class="flexblock-3columns__price">120&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Дарницкий</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Самый узнаваемый и всеми любимый ржано-пшеничный хлеб.Возможен в двух вариантах: подовый&#40;круглый&#41; и формовой&#40;кирпичик&#41;.</p>
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная обдирная, мука пшеничная 1го сорта, соль, вода.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 500 гр &ndash; 120&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/latvianbread.JPEG" alt="Латвийский">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Латвийский <span class="flexblock-3columns__price">150&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Латвийский кисло-сладкий</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Ржано-пшеничный хлеб с солодом. Нежный и интересный, необычный вкус, воздушный мякишь и легкий аромат тмина.</p>
-					<p class="flexblock-3columns__compasition">Состав: мука ржаная обдирная, мука пшеничная 1го сорта, экстракт ржаного солода, сахар, соль, тмин, вода.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 500 гр &ndash; 150&#8381;</span>
-				</div>
-			</div>
-			<div class="flexblock-3columns__content">
-				<img class="flexblock-3columns__image" src="images/justryebread.jpeg" alt="Ржаной">
-				<div class="flexblock-3columns__background-block">
-					<div class="flexblock-3columns__frame">
-						<span class="flexblock-3columns__text">Ржаной <span class="flexblock-3columns__price">100&#8381;</span></span>
-					</div>
-				</div>
-				<div class="flexblock-3columns__description">
-					<h3 class="flexblock-3columns__h3">Ржаной</h3>
-					<div class="flexblock-3columns__line"></div>
-					<p class="flexblock-3columns__compasition">Самый простой состав и очень вкусный хлеб. Ничего лишнего.</p>
-					<p class="flexblock-3columns__compasition">Состав: ржаная мука, соль и вода.</p>
-					<span class="flexblock-3columns__price">Буханка примерно 500 гр &ndash; 100&#8381;</span>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section
+      class="section-about-me section-about-me_bottom-marg"
+      id="about-me"
+    >
+      <div class="container-90">
+        <div class="section-about-me__flexblock">
+          <div class="section-about-me__img">
+            <img
+              class="section-about-me__avatar"
+              src="images/i_am.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="section-about-me__info">
+            <div class="section-about-me__wrapperlogo">
+              <img
+                class="section-about-me__logo"
+                src="images/logo/logo2.png"
+                alt="lovehleb-logo"
+              />
+            </div>
+            <p class="section-about-me__text">
+              Всем привет. Меня зовут Любовь Голубовская и я люблю хлеб! А ещё я
+              люблю кормить людей хлебом, поэтому пеку его на заказ.
+            </p>
+            <p class="section-about-me__text">
+              На данный момент это 9 видов хлеба, горбушки, кексы и имбирные
+              пряники. Я постоянно расширяю ассортимент и добавляю что-то новое.
+            </p>
+            <p class="section-about-me__text">
+              Все хлебушки только на закваске, из полностью натуральных
+              ингредиентов, а также без использования магазинных дрожжей.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="section-order section-order_bottom-marg" id="order-bread">
-		<div class="container-90">
-			<h2 class="section-order__header">Сделать заказ</h2>
-			<p class="section-order__text">Здесь Вы можете оформить свой заказ.</p>
-			<form class="get-order" id="order-form" action="mail.php" method="post">
-			  <div class="order-form__wrapper">
-			    <input class="order-form__input" name="first_name" type="text" placeholder="Ваше имя:">
-			    <input class="order-form__input" name="email" type="text" placeholder="Ваш Email: (не обязательно)">
-			    <input class="order-form__input" name="telephone" type="tel" placeholder="Ваш телефон: 89658073727" pattern="[0-9]{11,11}">
-			    <textarea class="order-form__text-field" placeholder="Напишите здесь свой заказ:" form="order-form" name="message"></textarea>
-			    <input class="order-form__btn-order" type="submit" value="Заказать">
-			  </div>
-			</form>
-		</div>
-	</section>
+    <section
+      class="section-my-bread section-my-bread_bottom-marg"
+      id="my-bread"
+    >
+      <div class="section-my-bread__bg">
+        <h2 class="section-my-bread__header">Прайс</h2>
+      </div>
+      <div class="flexblock-3columns">
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/hamsterbread.jpeg"
+            alt="Хомяк"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Хомяк
+                <span class="flexblock-3columns__price">230&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Хомяк</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Хлеб ржано-пшеничный, темный десертный,заварной. С большим
+              количеством различных семян и сухофруктов. Очень ароматный и
+              сладкий.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная обдирная, мука пшеничная цельнозерновая, соль,
+              сахар, тмин, кориандр, солод ржаной ферментированный, семечки
+              подсолнечника, семечки тыквенные, семена кунжута светлого и
+              черного, семена льна, крупа пшеничная, курага, изюм, чернослив,
+              вода
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 450 гр &ndash; 230&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/gingerbread.jpeg"
+            alt="Пряники имбирные"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Пряники имбирные
+                <span class="flexblock-3columns__price">250&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Имбирные пряники</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Полностью натуральный состав, цельнозерновая полбяная и ржаная
+              мука, а вместо сахара - финиковый сироп, за счёт чего в прянике
+              нет приторной сладости. Благодаря смеси муки текстура просто
+              нежнейшая. А настоящая цейлонская корица в сочетании с ещё 5ью
+              специями и терпким мёдом придают пряный неповторимый аромат.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука полбяная цельнозерновая, мука ржаная цельнозерновая,
+              мёд, масло сливочное, финиковый сироп, соль, сода, смесь
+              специй&#40;корица цейлонская, имбирь, мускатный орех, гвоздика,
+              бадьян, кардамон&#41;.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Минимальный заказ 250 гр &#40;примерно 16-18 шт&#41; &ndash;
+              250&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/buckwheatbread.jpeg"
+            alt="Гречневый"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Гречневый
+                <span class="flexblock-3columns__price">150&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Гречневый</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Это пшеничный хлеб. Очень ароматный, нежный и вкусный.В отличии от
+              ржаного он имеет более воздушный мякишь с крупными порами. Он
+              совсем без сахара. Для вкуса здесь только солод и соль.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука пшеничная 1го сорта, мука пшеничная цельнозерновая,
+              мука ржаная обойная, мука гречневая, семена льна.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 450 гр &ndash; 150&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/butterbread.jpeg"
+            alt="Горбушки"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Горбушки
+                <span class="flexblock-3columns__price">200&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Ржаные горбушки</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Вкусные, полезные, ржаные горбушки на экологически чистой муке
+              грубого помола.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная цельнозерновая грубого помола(Шугуровская),
+              вода, солод ржаной ферментированный, соль.
+            </p>
+            <span class="flexblock-3columns__price"
+              >1 порция 450 гр &ndash; 200&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/ryemaltbread.jpeg"
+            alt="Ржаной с солодом"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Ржаной с солодом
+                <span class="flexblock-3columns__price">150&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Ржаной хлеб с солодом</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Хлеб для любителей полезного. 100% ржаной на муке грубого помола.
+              Ароматный за счёт солода.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная цельнозерновая грубого помола (Шугуровская),
+              вода, солод ржаной ферментированный, соль.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 450 гр &ndash; 150&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/cranberrybread.jpeg"
+            alt="Клюквенный"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Клюквенный
+                <span class="flexblock-3columns__price">230&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Клюквенный</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Очень необычный хлеб. Чисто ржаной с солодом, клюквой и
+              кардамоном.Аромат этой специи очень не обычный для хлеба, но этим
+              он и пленяет от первого до последнего кусочка. Это настоящее
+              хлебное пирожное.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная обдирная, солод ржаной ферментированный,
+              клюква, мёд, кардамон, соль, вода.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 450 гр &ndash; 230&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/smallhamster.jpeg"
+            alt="Хомячки"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Хомячки
+                <span class="flexblock-3columns__price">300&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Мини хомячки</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Тот же самый легендарный десертный хлеб Хомяк, только в миниатюре.
+              Мини хлебушки - это находка для пикников, праздников а так же для
+              любителей горбушек. Разрезал пополам, намазал маслом и кайфуй!
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная обдирная, мука пшеничная цельнозерновая, соль,
+              сахар, тмин, кориандр, солод ржаной ферментированный, семечки
+              подсолнечника, семечки тыквенные, семена кунжута светлого и
+              черного, семена льна, крупа пшеничная, курага, изюм, чернослив,
+              вода.
+            </p>
+            <span class="flexblock-3columns__price"
+              >1 порция 6шт, примерно 450 гр &ndash; 300&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/ryebread.JPEG"
+            alt="Пшенично-ржаной"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Пшенично-Ржаной
+                <span class="flexblock-3columns__price">120&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Пшенично-ржаной</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Здесь 50% пшеничной цельнозерновой муки и 50% ржаной. Он более
+              нежный, но при этом тоже имеет ярко выраженный ржаной вкус.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука пшеничная цельнозерновая, мука ржаная обдирная, соль,
+              вода.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 500 гр &ndash; 120&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/bananabread.jpeg"
+            alt="bananabread"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Bananabread
+                <span class="flexblock-3columns__price">360&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Bananabread</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Bananabread - банановый кекс в нескольких вариантах: <br />1&#41;
+              Ореховое наслаждение с грецким орехом и миндалём; <br />2&#41;
+              Шоколадное искушение; <br />3&#41; Шоколадно-ореховое объедение;
+              <br />&#42; также возможны вариации с сухофруктами; <br />Нежные,
+              воздушные, постные цельнозерновые кексы на закваске. В их составе
+              нет яиц и молочки. Сверху они посыпаны сладким кокосовым
+              штрейзелем - это хрустящая корочка, которая очень хорошо дополняет
+              эти кексики. Правда в её составе есть сливочное масло. Уж очень с
+              ним она получается вкусная. Но при необходимости можно его
+              заменить растительной альтернативой.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: бананы, растительное масло, вода, мука пшеничная
+              цельнозерновая, сахар, изюм, остальные ингридиенты зависят от
+              варианта исполнения.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Минимальный заказ 6шт &ndash; 360&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/darnbread.jpeg"
+            alt="Дарницкий"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Дарницкий
+                <span class="flexblock-3columns__price">120&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Дарницкий</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Самый узнаваемый и всеми любимый ржано-пшеничный хлеб.Возможен в
+              двух вариантах: подовый&#40;круглый&#41; и
+              формовой&#40;кирпичик&#41;.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная обдирная, мука пшеничная 1го сорта, соль,
+              вода.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 500 гр &ndash; 120&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/latvianbread.JPEG"
+            alt="Латвийский"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Латвийский
+                <span class="flexblock-3columns__price">150&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Латвийский кисло-сладкий</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Ржано-пшеничный хлеб с солодом. Нежный и интересный, необычный
+              вкус, воздушный мякишь и легкий аромат тмина.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: мука ржаная обдирная, мука пшеничная 1го сорта, экстракт
+              ржаного солода, сахар, соль, тмин, вода.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 500 гр &ndash; 150&#8381;</span
+            >
+          </div>
+        </div>
+        <div class="flexblock-3columns__content">
+          <img
+            class="flexblock-3columns__image"
+            src="images/justryebread.jpeg"
+            alt="Ржаной"
+          />
+          <div class="flexblock-3columns__background-block">
+            <div class="flexblock-3columns__frame">
+              <span class="flexblock-3columns__text"
+                >Ржаной
+                <span class="flexblock-3columns__price">100&#8381;</span></span
+              >
+            </div>
+          </div>
+          <div class="flexblock-3columns__description">
+            <h3 class="flexblock-3columns__h3">Ржаной</h3>
+            <div class="flexblock-3columns__line"></div>
+            <p class="flexblock-3columns__compasition">
+              Самый простой состав и очень вкусный хлеб. Ничего лишнего.
+            </p>
+            <p class="flexblock-3columns__compasition">
+              Состав: ржаная мука, соль и вода.
+            </p>
+            <span class="flexblock-3columns__price"
+              >Буханка примерно 500 гр &ndash; 100&#8381;</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="section-questions section-questions_bottom-marg" id="questions">
-		<div class="section-questions__background">
-			<div class="container-90">
-				<h2 class="section-questions__header">Вопрос-ответ</h2>
-				<div class="section-questions__wrapper-text">
-					<p class="section-questions__text"><b class="section-questions__question"> Хлеб на закваске?</b> <br>Да, я пеку хлеб только на закваске. Без использования производственных дрожжей.</p>
-					<p class="section-questions__text"><b class="section-questions__question"> Как сделать заказ?</b> <br>Просто перейдите в раздел <a class="section-questions__link" href="#order-bread">заказать хлеб</a> и оформите свой заказ или напишите мне в <a href="https://www.instagram.com/love.hleb/" class="section-questions__ico">
-					<img class="section-questions__ico-img" src="images/ico/instagram_ico.png" alt="instagram"></a><a href="https://vk.com/love.hleb" class="section-questions__ico">
-					<img class="section-questions__ico-img" src="images/ico/vk_ico.png" alt="vk"></a><a href="whatsapp://send?text=Здравствуйте_я_хочу_сделать_заказ_хлеба&phone=+79658073727&abid=+79658073727" class="section-questions__ico">
-					<img class="section-questions__ico-img" src="images/ico/whatsapp_ico.png" alt="whatsapp"></a>. Так же Вы можете позвонить мне по номеру +7 965 807 37 27.</p>
-					<p class="section-questions__text"><b class="section-questions__question"> За сколько заказывать?</b> <br>Желательно за пару дней, не всегда я могу испечь хлеб именно завтра. Но всегда можно написать мне и узнать когда и что я пеку. Бывает что и на кануне беру заказ.</p>
-					<p class="section-questions__text"><b class="section-questions__question">Сколько стоит?</b> <br>Актуальные цены смотрите в разделе <a class="section-questions__link" href="#my-bread">Прайс</a>.</p>
-					<p class="section-questions__text"><b class="section-questions__question"> Где и во сколько забирать</b> <br>Хлебушек можно забрать в день выпечки после 18.00 или на следующий день по договоренности. Адрес самовывоза ул.Зелинского д.21.</p>
-					<p class="section-questions__text"><b class="section-questions__question">Есть ли доставка?</b> <br>Раз в неделю я организую доставку. Как правило - это четверг. Стоимость всего +30р к заказу.</p>
-					<p class="section-questions__text"><b class="section-questions__question">На эти и любые другие вопросы я с радостью отвечу в </b> <br><a href="https://www.instagram.com/love.hleb/" class="section-questions__ico">
-					<img class="section-questions__ico-img" src="images/ico/instagram_ico.png" alt="instagram"></a><a href="https://vk.com/love.hleb" class="section-questions__ico">
-					<img class="section-questions__ico-img" src="images/ico/vk_ico.png" alt="vk"></a><a href="whatsapp://send?text=Здравствуйте_я_хочу_сделать_заказ_хлеба&phone=+79658073727&abid=+79658073727" class="section-questions__ico">
-					<img class="section-questions__ico-img" src="images/ico/whatsapp_ico.png" alt="whatsapp"></a></p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="section-order section-order_bottom-marg" id="order-bread">
+      <div class="container-90">
+        <h2 class="section-order__header">Сделать заказ</h2>
+        <p class="section-order__text">Здесь Вы можете оформить свой заказ.</p>
+        <form class="get-order" id="order-form" action="mail.php" method="post">
+          <div class="order-form__wrapper">
+            <input
+              class="order-form__input"
+              name="first_name"
+              type="text"
+              placeholder="Ваше имя:"
+            />
+            <input
+              class="order-form__input"
+              name="email"
+              type="text"
+              placeholder="Ваш Email: (не обязательно)"
+            />
+            <input
+              class="order-form__input"
+              name="telephone"
+              type="tel"
+              placeholder="Ваш телефон: 89658073727"
+              pattern="[0-9]{11,11}"
+            />
+            <textarea
+              class="order-form__text-field"
+              placeholder="Напишите здесь свой заказ:"
+              form="order-form"
+              name="message"
+            ></textarea>
+            <input
+              class="order-form__btn-order"
+              type="submit"
+              value="Заказать"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
 
-	<section class="section-testimonials section-testimonials_bottom-marg" id="testimonials">
-		<h2 class="section-testimonials__header">Отзывы о хлебе</h2>
-		<div class="container-90">
-			<div class="section-testimonials__slider">
-				<div class="section-testimonials__review">
-					<p>Здесь ещё нет отзывов</p>
-				</div>
-				<div class="section-testimonials__review">
-					<p>Отзывы появятся позже</p>
-				</div>
-				<div class="section-testimonials__review">
-					<p>Здесь ещё нет отзывов</p>
-				</div>
-				<div class="section-testimonials__review">
-					<p>Отзывы появятся позже</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section
+      class="section-questions section-questions_bottom-marg"
+      id="questions"
+    >
+      <div class="section-questions__background">
+        <div class="container-90">
+          <h2 class="section-questions__header">Вопрос-ответ</h2>
+          <div class="section-questions__wrapper-text">
+            <p class="section-questions__text">
+              <b class="section-questions__question"> Хлеб на закваске?</b>
+              <br />Да, я пеку хлеб только на закваске. Без использования
+              производственных дрожжей.
+            </p>
+            <p class="section-questions__text">
+              <b class="section-questions__question"> Как сделать заказ?</b>
+              <br />Просто перейдите в раздел
+              <a class="section-questions__link" href="#order-bread"
+                >заказать хлеб</a
+              >
+              и оформите свой заказ или напишите мне в
+              <a
+                href="https://www.instagram.com/love.hleb/"
+                class="section-questions__ico"
+              >
+                <img
+                  class="section-questions__ico-img"
+                  src="images/ico/instagram_ico.png"
+                  alt="instagram" /></a
+              ><a
+                href="https://vk.com/love.hleb"
+                class="section-questions__ico"
+              >
+                <img
+                  class="section-questions__ico-img"
+                  src="images/ico/vk_ico.png"
+                  alt="vk" /></a
+              ><a
+                href="whatsapp://send?text=Здравствуйте_я_хочу_сделать_заказ_хлеба&phone=+79658073727&abid=+79658073727"
+                class="section-questions__ico"
+              >
+                <img
+                  class="section-questions__ico-img"
+                  src="images/ico/whatsapp_ico.png"
+                  alt="whatsapp" /></a
+              >. Так же Вы можете позвонить мне по номеру +7 965 807 37 27.
+            </p>
+            <p class="section-questions__text">
+              <b class="section-questions__question"> За сколько заказывать?</b>
+              <br />Желательно за пару дней, не всегда я могу испечь хлеб именно
+              завтра. Но всегда можно написать мне и узнать когда и что я пеку.
+              Бывает что и на кануне беру заказ.
+            </p>
+            <p class="section-questions__text">
+              <b class="section-questions__question">Сколько стоит?</b>
+              <br />Актуальные цены смотрите в разделе
+              <a class="section-questions__link" href="#my-bread">Прайс</a>.
+            </p>
+            <p class="section-questions__text">
+              <b class="section-questions__question">
+                Где и во сколько забирать</b
+              >
+              <br />Хлебушек можно забрать в день выпечки после 18.00 или на
+              следующий день по договоренности. Адрес самовывоза ул.Зелинского
+              д.21.
+            </p>
+            <p class="section-questions__text">
+              <b class="section-questions__question">Есть ли доставка?</b>
+              <br />Раз в неделю я организую доставку. Как правило - это
+              четверг. Стоимость всего +30р к заказу.
+            </p>
+            <p class="section-questions__text">
+              <b class="section-questions__question"
+                >На эти и любые другие вопросы я с радостью отвечу в
+              </b>
+              <br /><a
+                href="https://www.instagram.com/love.hleb/"
+                class="section-questions__ico"
+              >
+                <img
+                  class="section-questions__ico-img"
+                  src="images/ico/instagram_ico.png"
+                  alt="instagram" /></a
+              ><a
+                href="https://vk.com/love.hleb"
+                class="section-questions__ico"
+              >
+                <img
+                  class="section-questions__ico-img"
+                  src="images/ico/vk_ico.png"
+                  alt="vk" /></a
+              ><a
+                href="whatsapp://send?text=Здравствуйте_я_хочу_сделать_заказ_хлеба&phone=+79658073727&abid=+79658073727"
+                class="section-questions__ico"
+              >
+                <img
+                  class="section-questions__ico-img"
+                  src="images/ico/whatsapp_ico.png"
+                  alt="whatsapp"
+              /></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="section-contacts section-contacts_bottom-marg" id="contacts">
-		<div class="container-90">
-			<h2 class="section-contacts__header">Контакты</h2>
-			<div class="ya-map" style="position:relative;overflow:hidden;">
-		      <a href="https://yandex.ru/maps/24/veliky-novgorod/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Великий Новгород</a>
-		      <a href="https://yandex.ru/maps/24/veliky-novgorod/house/ulitsa_zelinskogo_21/Z0gYdARnSUQOQFtifXlyd3lgYA==/?ll=31.237084%2C58.536578&amp;source=wizgeo&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=18.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
-		      <iframe src="https://yandex.ru/map-widget/v1/-/CKa8fAOS" allowfullscreen style="position:relative;"></iframe>
-		  </div>
-			<div class="section-contacts__social-networks">
-				<a href="https://www.instagram.com/love.hleb/" class="section-contacts__ico">
-					<img src="images/ico/instagram_ico.png" alt="instagram">
-				</a>
-				<a href="https://vk.com/love.hleb" class="section-contacts__ico">
-					<img src="images/ico/vk_ico.png" alt="vk">
-				</a>
-				<a href="whatsapp://send?text=Здравствуйте_я_хочу_сделать_заказ_хлеба&phone=+79658073727&abid=+79658073727" class="section-contacts__ico">
-					<img src="images/ico/whatsapp_ico.png" alt="whatsapp">
-				</a>
-			</div>
-	   </div>
-  </section>
+    <section
+      class="section-testimonials section-testimonials_bottom-marg"
+      id="testimonials"
+    >
+      <h2 class="section-testimonials__header">Отзывы о хлебе</h2>
+      <div class="container-90">
+        <div class="section-testimonials__slider">
+          <div class="section-testimonials__review">
+            <div class="section-testimonials__ava">
+              <img
+                src="/images/ico/user.svg"
+                alt="ava"
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="section-testimonials__text-review">
+              <p>
+                Заказала хлеб хомяк, - это просто восхитительный хлеб! Спасибо
+                за такую вскуснотень!
+              </p>
+            </div>
+          </div>
+          <div class="section-testimonials__review">
+            <div class="section-testimonials__ava">
+              <img
+                src="/images/ico/user.svg"
+                alt="ava"
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="section-testimonials__text-review">
+              <p>
+                Хлеб вкусный и ароматный, дочке понравился хомяк, а мне оба!
+                Брали клюквенный и хому. Ели как отдельное блюдо, так как с
+                борщом в прикуску считаю не позволительной роскошью, этот хлеб
+                достоин звания отдельного блюда!
+              </p>
+            </div>
+          </div>
+          <div class="section-testimonials__review">
+            <div class="section-testimonials__ava">
+              <img
+                src="/images/ico/user.svg"
+                alt="ava"
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="section-testimonials__text-review">
+              <p>
+                Оооочень вкусный хлебушек. Горбушки с таким насыщенным вкусом. А
+                дарницкий хлеб с пористым мякишем "губка", не мнётся как
+                пластилин и такой же вкусный, хрустящий. Также заказывали
+                пряники, муж был в восторге. Они мягкие, ароматные, просто
+                прелесть. Большое вам спасибо за ваш труд и ту пользу, которую
+                вы приносите людям)
+              </p>
+            </div>
+          </div>
+          <div class="section-testimonials__review">
+            <div class="section-testimonials__ava">
+              <img
+                src="/images/ico/user.svg"
+                alt="ava"
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="section-testimonials__text-review">
+              <p>
+                Кексы которые вы испекли просто восторг! Похоже мы сейчас все их
+                съедим! Когда следующую партию будте печь?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="footer">
-  	<div class="footer__border"></div>
-  	<div class="container-90">
-	  	<div class="footer__container">
-	  		<div class="footer__nav">
-	  			<ul class="footer__list">
-	  				<li class="footer__item">
-	  					<a href="#" class="footer__link">Карта сайта</a>
-	  				</li>
-	  				<li class="footer__item">
-	  					<a href="#my-bread" class="footer__link">Хлеб</a>
-	  				</li>
-	  				<li class="footer__item">
-	  					<a href="#order-bread" class="footer__link">Сделать заказ</a>
-	  				</li>
-	  			</ul>
-	  		</div>
-	  		<div class="footer__wrapper-license">
-	  			<span class="footer__license footer__license_position">&copy;</span>
-	  			<span class="footer__license">love.hleb 2020</span>
-	  		</div>
-	  	</div>
-  	</div>
-  </footer>
+    <section
+      class="section-contacts section-contacts_bottom-marg"
+      id="contacts"
+    >
+      <div class="container-90">
+        <h2 class="section-contacts__header">Контакты</h2>
+        <div class="ya-map" style="position: relative; overflow: hidden;">
+          <a
+            href="https://yandex.ru/maps/24/veliky-novgorod/?utm_medium=mapframe&amp;utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px;"
+            >Великий Новгород</a
+          >
+          <a
+            href="https://yandex.ru/maps/24/veliky-novgorod/house/ulitsa_zelinskogo_21/Z0gYdARnSUQOQFtifXlyd3lgYA==/?ll=31.237084%2C58.536578&amp;source=wizgeo&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=18.51"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px;"
+            >Яндекс.Карты</a
+          >
+          <iframe
+            src="https://yandex.ru/map-widget/v1/-/CKa8fAOS"
+            allowfullscreen
+            style="position: relative;"
+          ></iframe>
+        </div>
+        <div class="section-contacts__social-networks">
+          <a
+            href="https://www.instagram.com/love.hleb/"
+            class="section-contacts__ico"
+          >
+            <img src="images/ico/instagram_ico.png" alt="instagram" />
+          </a>
+          <a href="https://vk.com/love.hleb" class="section-contacts__ico">
+            <img src="images/ico/vk_ico.png" alt="vk" />
+          </a>
+          <a
+            href="whatsapp://send?text=Здравствуйте_я_хочу_сделать_заказ_хлеба&phone=+79658073727&abid=+79658073727"
+            class="section-contacts__ico"
+          >
+            <img src="images/ico/whatsapp_ico.png" alt="whatsapp" />
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <div class="footer__border"></div>
+      <div class="container-90">
+        <div class="footer__container">
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Карта сайта</a>
+              </li>
+              <li class="footer__item">
+                <a href="#my-bread" class="footer__link">Хлеб</a>
+              </li>
+              <li class="footer__item">
+                <a href="#order-bread" class="footer__link">Сделать заказ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrapper-license">
+            <span class="footer__license footer__license_position">&copy;</span>
+            <span class="footer__license">love.hleb 2020</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="js/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
 
+    <!-- Yandex.Metrika counter -->
+    <script>
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-<!-- Yandex.Metrika counter -->
-<script>
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(61468207, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/61468207"
+          style="position: absolute; left: -9999px;"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 
-   ym(61468207, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript>
-	<div>
-		<img src="https://mc.yandex.ru/watch/61468207" style="position:absolute; left:-9999px;" alt="" />
-	</div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
+    <!-- Testimonials - slider -->
+    <script>
+      $(document).ready(function () {
+        $(".section-testimonials__slider").slick();
+      });
+    </script>
 
+    <!-- section-my-bread slider -->
+    <script>
+      $(document).ready(function () {
+        // Ждём загрузки страницы
+        $(".flexblock-3columns__background-block").click(function () {
+          // Событие клика на нужный блок
+          var img = $(this).siblings(".flexblock-3columns__image"); //Получаем изображение, которое лежит рядом с блоком на который кликнули
+          var src = img.attr("src"); // Достаем из этого изображения путь до картинки
+          var txt = $(this).siblings(".flexblock-3columns__composition"); // Получаем текст из блока
+          var description = $(this).siblings(
+            ".flexblock-3columns__description"
+          ); // Получаем текст из блока
+          txt.addClass("hide-text"); // Добавляем ещё один класс
+          description.fadeIn("slow"); // Добавляем ещё один класс
+          $("body").append(
+            "<div class='popup'>" + //Добавляем в тело документа разметку всплывающего окна
+            "<div class='popup_bg'></div>" + // Блок, который будет служить фоном затемненным
+            "<img src='" +
+            src +
+            "' class='popup_img' />" + // Само увеличенное фото
+              txt +
+              "</div>"
+          );
+          $(".popup").fadeIn(1000); // Медленно выводим изображение
+          $(".popup_bg").click(function () {
+            // Событие клика на затемненный фон
+            $(".popup").fadeOut(500); // Медленно убираем всплывающее окн
+            setTimeout(function () {
+              // Выставляем таймер
+              $(".popup").remove(); // Удаляем разметку всплывающего окна
+              txt.removeClass("hide-text");
+              description.fadeOut(100); // Удаляем разметку всплывающего окна
+            }, 200);
+          });
+        });
+      });
+    </script>
 
-<!-- Testimonials - slider -->
-<script>
-	$(document).ready(function(){
-		$('.section-testimonials__slider').slick();
-	});
-</script>
+    <!-- Scroll anchor -->
+    <script>
+      $(function () {
+        $("a[href^='#']").click(function () {
+          var _href = $(this).attr("href");
+          $("html, body").animate(
+            { scrollTop: $(_href).offset().top + "px" },
+            1000
+          );
+          return false;
+        });
+      });
+    </script>
 
-<!-- section-my-bread slider -->
-<script>
-	$(document).ready(function() { // Ждём загрузки страницы
-		$(".flexblock-3columns__background-block").click(function(){	// Событие клика на нужный блок
-		  	var img = $(this).siblings(".flexblock-3columns__image");	//Получаем изображение, которое лежит рядом с блоком на который кликнули
-				var src = img.attr('src'); // Достаем из этого изображения путь до картинки
-				var txt = $(this).siblings(".flexblock-3columns__composition"); // Получаем текст из блока 
-				var description = $(this).siblings(".flexblock-3columns__description"); // Получаем текст из блока 
-				txt.addClass("hide-text"); // Добавляем ещё один класс
-				description.fadeIn("slow"); // Добавляем ещё один класс
-				$("body").append("<div class='popup'>"+ //Добавляем в тело документа разметку всплывающего окна
-							 					 "<div class='popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
-												 "<img src='"+src+"' class='popup_img' />"+ // Само увеличенное фото
-												 txt+
-												 "</div>");
-				$(".popup").fadeIn(1000); // Медленно выводим изображение
-				$(".popup_bg").click(function(){	// Событие клика на затемненный фон	   
-					$(".popup").fadeOut(500);	// Медленно убираем всплывающее окн	
-	      	setTimeout(function() {	// Выставляем таймер
-				  	$(".popup").remove(); // Удаляем разметку всплывающего окна
-				  	txt.removeClass("hide-text");
-				  	description.fadeOut(100); // Удаляем разметку всплывающего окна
-					}, 200);
-			});
-		});	
-	});
-</script>
-
-<!-- Scroll anchor -->
-<script>
-	$(function(){
-		$("a[href^='#']").click(function(){
-	  	var _href = $(this).attr("href");
-	    $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 1000);
-	    return false;
-	  });
-	});
-</script>
-
-<!-- Animation of the burger menu -->
-<script>
-	$(document).ready(function() {
-		$('.nav-panel__burger').click(function(event) {
-			$('.nav-panel__burger,.nav-panel__list').toggleClass('active-burger');
-			$('body').toggleClass('lock-screen');
-		});
-	}); 
-</script>
-
-
-</body>
+    <!-- Animation of the burger menu -->
+    <script>
+      $(document).ready(function () {
+        $(".nav-panel__burger").click(function (event) {
+          $(".nav-panel__burger,.nav-panel__list").toggleClass("active-burger");
+          $("body").toggleClass("lock-screen");
+        });
+      });
+    </script>
+  </body>
 </html>
