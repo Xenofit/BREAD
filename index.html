@@ -798,17 +798,17 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script async src="js/slick.min.js"></script>
 
     <!-- Testimonials - slider -->
-    <script>
+    <script async>
       $(document).ready(function () {
         $(".section-testimonials__slider").slick();
       });
     </script>
 
     <!-- section-my-bread slider -->
-    <script>
+    <script async>
       $(document).ready(function () {
         // Ждём загрузки страницы
         $(".flexblock-3columns__background-block").click(function () {
@@ -846,7 +846,7 @@
     </script>
 
     <!-- Scroll anchor -->
-    <script>
+    <script async>
       $(function () {
         $("a[href^='#']").click(function () {
           var _href = $(this).attr("href");
@@ -860,7 +860,7 @@
     </script>
 
     <!-- Animation of the burger menu -->
-    <script>
+    <script async>
       $(document).ready(function () {
         $(".nav-panel__burger").click(function (event) {
           $(".nav-panel__burger,.nav-panel__list").toggleClass("active-burger");
